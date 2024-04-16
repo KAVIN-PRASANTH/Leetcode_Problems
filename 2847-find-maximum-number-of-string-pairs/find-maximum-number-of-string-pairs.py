@@ -11,8 +11,6 @@ class Solution:
         p=0
         for key,val in map1.items():
             p+=val//2
-            
-        print(map1)
 
         return p
         
