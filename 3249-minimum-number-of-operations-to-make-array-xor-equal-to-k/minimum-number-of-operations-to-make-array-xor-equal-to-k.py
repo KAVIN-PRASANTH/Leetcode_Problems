@@ -6,7 +6,6 @@ class Solution:
         maxlen=max(list(map(lambda e:len(e),a)))
         if len(res)>maxlen:
             maxlen=len(res)
-        print(maxlen)
         def eq(e):
             e=str(e)
             if len(e)!=maxlen:
@@ -14,8 +13,6 @@ class Solution:
                 return ex+e
             return e
         a=list(map(eq,a))
-        print(a)
-        print(res)
         if len(res)!=maxlen:
             res=eq(res)
         for i in range(0,maxlen):
@@ -25,7 +22,6 @@ class Solution:
                 xor^=int(k[i])
             if int(res[i])!=int(xor):
                 c+=1
-        
         return c
 
         
