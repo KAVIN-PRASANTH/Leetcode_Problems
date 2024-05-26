@@ -17,14 +17,14 @@ class Solution:
             if b==-1:
                 continue
             flag=-1
-            print(f'b {b}')
+            
 
             for j in range(1,len(i)):
-                print(str(i[j]).lower() not in res[b])
+                
                 if str(i[j]).lower() not in res[b]:
                     flag=1
                     break
-            print(f'flag : {flag}')
+        
             if flag==-1:
                 l.append(i)
         return l
