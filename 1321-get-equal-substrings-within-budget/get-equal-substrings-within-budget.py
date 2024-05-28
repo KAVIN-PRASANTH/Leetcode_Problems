@@ -22,7 +22,6 @@ class Solution:
                 if flag>0:
                     flag-=1
             maxvalue=max(maxvalue,flag)
-            print(f'i={i} j={j} maxCost={maxCost} flag={flag} cost={cost} maxlen={maxvalue}')
         return maxvalue
 
 
