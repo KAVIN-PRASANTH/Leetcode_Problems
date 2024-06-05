@@ -8,7 +8,6 @@ class Solution:
             else:
                 resmap[i]=1
         words.pop(0)
-        print(resmap,words)
         for i in words:
             check={}
             for j in i:
@@ -21,7 +20,6 @@ class Solution:
                     resmap[key]=min(check[key],value)
                 else:
                     resmap[key]=0
-            print("-->",check,resmap)
         for key,value in resmap.items():
             for index in range(0,value):
                 final.append(key)
