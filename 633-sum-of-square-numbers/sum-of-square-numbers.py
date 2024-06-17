@@ -2,8 +2,6 @@ class Solution:
     def judgeSquareSum(self, c: int) -> bool:
         for i in range(0,(c//2)+2):
             cal=c-(i*i)
-
-            print(i,cal)
             if cal<0:
                 return False
             cal=math.sqrt(cal)
